@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+    border-radius: 0.5em;
+    min-width:20%;
+ 
+}
+.title{
+    font-size: 1.2em;
+  
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-align: center;
+    max-width: 40%;
+}
+.itemContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em;
+}
+.button{
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+}
+.button:hover{
+    color: rgb(27, 165, 207);
+}
+
+/* color mode */
+.blue{
+        background-color: rgba(27, 165, 207, 0.068);
+        border: 2px solid rgb(27, 165, 207);
+    .title{
+        border: 1px solid rgb(27, 165, 207);
+        color: rgb(27, 165, 207);
+    }
+}
+
+.yellow{
+background-color: rgba(255, 234, 50, 0.116);
+border:1px solid rgb(255, 234, 50);
+.title{
+    border: 1px solid rgb(255, 234, 50);
+    color: rgb(255, 234, 50);
+}
+}
+
+.red{
+background-color: rgba(250, 47, 40, 0.116);
+border: 1px solid rgb(250, 47, 40);
+
+.title{
+    border: 1px solid rgb(250, 47, 40);
+    color: rgb(250, 47, 40);
+}
+}
+
+.green{
+background-color: rgba(107, 255, 22, 0.096);
+border: 1px solid rgb(107, 255, 22);
+.title{
+    border: 1px solid rgb(107, 255, 22);
+    color: rgb(107, 255, 22);
+}
+}
+
+
+.popUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }

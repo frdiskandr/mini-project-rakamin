@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 1px solid white;
+    padding: 1em;
+    position: relative;
+    border-radius: 0.5em;
+    background-color: rgb(245, 245, 245);
+    color: rgb(44, 44, 44);
+    border: 1px solid rgba(37, 37, 37, 0.521);
+    max-height: 120px;    
+}
+.title{
+    font-size: 0.9em;
+}

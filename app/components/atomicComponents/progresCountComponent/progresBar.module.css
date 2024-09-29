@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  border-top: 1px dashed rgb(37, 37, 37);
+}
+
+.container_bar {
+  width: 100%;
+}
+
+.progres {
+  background-color: rgb(228, 226, 226);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.progres_bar {
+  height: 18px;
+  background-color: rgb(16, 194, 218);
+  border-radius: 30px;
+}
+
+.menu {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
+  font-size: 2em;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0.3em;
+}
+.menu_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  position: relative;
+  bottom: 0.3em;
+}
+
+.popUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.None {
+  display: none;
+}

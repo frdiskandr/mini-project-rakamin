@@ -1,0 +1,58 @@
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: start;
+  gap: 0.1em;
+  width: 200px;
+  padding: 0.1em;
+  background-color: rgba(255, 255, 255, 0.959);
+  position: absolute;
+  color: black;
+  left: 50px;
+  overflow: hidden;
+  z-index: 2;
+}
+.button,
+.delete {
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.5em;
+  cursor: pointer;
+  gap: 0.5em;
+}
+.button:hover {
+  color: aqua;
+  .img {
+    filter: drop-shadow(1px 1px 1px aqua);
+    -webkit-filter: drop-shadow(1px 1px 1px aqua);
+  }
+}
+.delete:hover {
+  color: red;
+  .img {
+    filter: drop-shadow(1px 1px 1px red);
+    -webkit-filter: drop-shadow(1px 1px 1px red);
+  }
+}
+.left {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+}
+.right {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.title {
+  font-size: 0.5em;
+  font-weight: bold;
+}
