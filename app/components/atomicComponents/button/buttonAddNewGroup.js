@@ -1,6 +1,7 @@
 'use client'
 import style from './buttonComponent.module.css'
 import { useState } from "react";
+import { token } from '@/Api/token';
 
 function ButtonAddNewGroup({ value, title,description, color, onCancle }) {
     const [isLoading, setIsLoading] = useState(false)
@@ -10,7 +11,7 @@ function ButtonAddNewGroup({ value, title,description, color, onCancle }) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2MDgsImV4cCI6MTczNjIyODY5N30.Fg8Fq3BAq72OfYxBKdsHWvOvHrcLO_RPXTnOMyZ59jY'
+                'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify({
                 title: title,
