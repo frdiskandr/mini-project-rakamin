@@ -34,24 +34,24 @@ export default function GroupComponent({ title, description, id, color }) {
 
     return (
         <>
-            <div className={`${style.container} ${style[color]}`}>
-                <h3 className={style.title}>{title}</h3>
-                <p className={style.description}>{description}</p>
-                <div className={style.itemContainer}>
-                    {/* items di map disini */}
-                    {itemsDatas.map((item) => (
-                        <ItemComponent key={item.id} title={item.name} value={item.progress_percentage} id={item.id} perentId={id} />
-                    ))} 
+           
 
-                    {/* <ItemComponent title="Todo" value={10} id={id} />
-                    <ItemComponent title="In Progress" value={20} id={id} />
-                    <ItemComponent title="Done" value={30} id={id} /> */}
+            {/* new card */}
+         
+                <div className={`${style.cardGroup} ${style[color]}`}>
+                    <div className={style.title}>{title}</div>
+                    <div className={style.description}>{description}</div>
+                    <div className={style.items}>
+                        {/* items di map disini */}
+                        {itemsDatas.map((item) => (
+                            <ItemComponent key={item.id} title={item.name} value={item.progress_percentage} id={item.id} perentId={id}/>
+                        ))}
+                    </div>
+                    <div className={style.button}
+                        onClick={handleNewTask}>
+                        New Task
+                    </div>
                 </div>
-                <div className={style.button}
-                    onClick={handleNewTask}>
-                    New Task
-                </div>
-            </div>
 
             {/* popup */}
             <div className={showNewTask ? style.popUp : null}>

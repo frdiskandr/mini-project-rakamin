@@ -1,16 +1,20 @@
-.container{
+
+.card{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    border: 1px solid white;
+    border: 1px solid #E0E0E0;
     padding: 1em;
     position: relative;
     border-radius: 0.5em;
-    background-color: rgb(245, 245, 245);
-    color: rgb(44, 44, 44);
+    background-color: #FAFAFA;
+    color: #404040;
     border: 1px solid rgba(37, 37, 37, 0.521);
-    max-height: 120px;    
+    width: 100%;
+    max-height: 120px;
+    margin: 10px 0px;
 }
 .title{
+    font-family: Nunito Sans;
     font-size: 0.9em;
 }

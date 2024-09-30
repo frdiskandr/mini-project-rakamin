@@ -59,10 +59,6 @@ function Home() {
             />
           ))}
 
-          {/* <GroupComponent title="Todo" description="10 tasks" id="1" color='blue' />
-          <GroupComponent title="In Progress" description="20 tasks" id="2" color='yellow' />
-          <GroupComponent title="Done" description="30 tasks" id="3" color='red' />
-          <GroupComponent title="Done" description="30 tasks" id="4" color='green' /> */}
         </div>
       </div>
 
